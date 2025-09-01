@@ -1,0 +1,5 @@
+{
+    "urdf-visualizer.packages": {
+        "urdf-head": "${workspaceFolder}"
+    }
+}
