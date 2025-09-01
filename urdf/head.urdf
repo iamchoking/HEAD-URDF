@@ -3,7 +3,7 @@
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="urdf-head">
+  name="head">
   <!-- this link makes the robot fixed-base in RAISIM -->
   <link name="world"></link>
 
@@ -11,12 +11,12 @@
     <!-- edited with custom script -->
     <inertial>
       <origin 
-        xyz="-0.00013000000000000002 5.9999999999999995e-05 -0.019559999999999998"
+        xyz="-0.00013000000000000002 6e-05 -0.01956"
         rpy="0 0 0" />
       <mass
         value="0.22691" />
       <inertia
-        ixx="6.726675999999999e-05"
+        ixx="6.726676e-05"
         ixy="-2.4361e-07"
         ixz="-6.3156e-07"
         iyy="6.666816e-05"
@@ -29,7 +29,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/base_link.STL" />
+          filename="../meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -43,7 +43,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/base_link.STL" />
+          filename="../meshes/base_link.STL" />
       </geometry>
     </collision> -->
   </link>
@@ -59,7 +59,7 @@
     <!-- edited with custom script -->
     <inertial>
     <origin
-        xyz="-0.00621 -0.0005899999999999999 0.09247"
+        xyz="-0.00621 -0.00059 0.09247"
         rpy="0 0 0" />
     <mass
         value="0.38718" />
@@ -77,7 +77,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/neck.STL" />
+          filename="../meshes/neck.STL" />
       </geometry>
       <material
         name="">
@@ -91,7 +91,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/neck.STL" />
+          filename="../meshes/neck.STL" />
       </geometry>
     </collision> -->
   </link>
@@ -125,7 +125,7 @@
         ixy="-1.650247e-05"
         ixz="3.6080700000000003e-06"
         iyy="6.330044e-05"
-        iyz="-3.7976999999999997e-07"
+        iyz="-3.7977e-07"
         izz="6.109326e-05" />
     </inertial>
     <visual>
@@ -134,7 +134,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/chin.STL" />
+          filename="../meshes/chin.STL" />
       </geometry>
       <material
         name="">
@@ -148,7 +148,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/chin.STL" />
+          filename="../meshes/chin.STL" />
       </geometry>
     </collision> -->
   </link>
@@ -182,7 +182,7 @@
         ixy="-7.591147e-05"
         ixz="1.6041e-07"
         iyy="0.0010570050700000001"
-        iyz="2.1684999999999999e-07"
+        iyz="2.1685e-07"
         izz="0.00072350371" />
     </inertial>
     <visual>
@@ -191,7 +191,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/face.STL" />
+          filename="../meshes/face.STL" />
       </geometry>
       <material
         name="">
@@ -205,7 +205,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/face.STL" />
+          filename="../meshes/face.STL" />
       </geometry>
     </collision> -->
   </link>
@@ -243,7 +243,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/d455_link.STL" />
+          filename="../meshes/d455_link.STL" />
       </geometry>
       <material
         name="">
@@ -257,7 +257,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/d455_link.STL" />
+          filename="../meshes/d455_link.STL" />
       </geometry>
     </collision> -->
   </link>
@@ -283,7 +283,7 @@
         value="0.265" />
     <inertia
         ixx="0.00012374566"
-        ixy="-1.1019999999999999e-08"
+        ixy="-1.102e-08"
         ixz="-1.964e-08"
         iyy="0.00013334891"
         iyz="-3.4840000000000006e-08"
@@ -295,7 +295,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/mid360_link.STL" />
+          filename="../meshes/mid360_link.STL" />
       </geometry>
       <material
         name="">
@@ -309,7 +309,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://urdf-head/meshes/mid360_link.STL" />
+          filename="../meshes/mid360_link.STL" />
       </geometry>
     </collision> -->
   </link>
