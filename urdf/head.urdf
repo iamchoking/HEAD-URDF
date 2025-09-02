@@ -2,8 +2,7 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot
-  name="head">
+<robot name="head">
   <!-- this link makes the robot fixed-base in RAISIM -->
   <link name="world"></link>
 
@@ -13,8 +12,7 @@
       <origin 
         xyz="-0.00013000000000000002 6e-05 -0.01956"
         rpy="0 0 0" />
-      <mass
-        value="0.22691" />
+      <mass value="0.22691" />
       <inertia
         ixx="6.726676e-05"
         ixy="-2.4361e-07"
@@ -28,13 +26,10 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/base_link.STL" />
+        <mesh filename="../meshes/base_link.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      <material name="">
+        <color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
       </material>
     </visual>
     <!-- <collision>
@@ -42,8 +37,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/base_link.STL" />
+        <mesh filename="../meshes/base_link.STL" />
       </geometry>
     </collision> -->
   </link>
@@ -61,8 +55,7 @@
     <origin
         xyz="-0.00621 -0.00059 0.09247"
         rpy="0 0 0" />
-    <mass
-        value="0.38718" />
+    <mass value="0.38718" />
     <inertia
         ixx="0.00084209162"
         ixy="1.78477e-06"
@@ -76,13 +69,10 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/neck.STL" />
+        <mesh filename="../meshes/neck.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      <material name="">
+        <color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
       </material>
     </visual>
     <!-- <collision>
@@ -90,20 +80,16 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/neck.STL" />
+        <mesh filename="../meshes/neck.STL" />
       </geometry>
     </collision> -->
   </link>
-  <joint name="pan"
-    type="revolute">
+  <joint name="pan" type="revolute">
     <origin
       xyz="0 0 0"
       rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="neck" />
+    <parent link="base_link" />
+    <child link="neck" />
     <axis
       xyz="0 0 -1" />
     <limit
@@ -118,8 +104,7 @@
     <origin
         xyz="0.00292 -0.00883 -0.01141"
         rpy="0 0 0" />
-    <mass
-        value="0.06976" />
+    <mass value="0.06976" />
     <inertia
         ixx="4.2354910000000004e-05"
         ixy="-1.650247e-05"
@@ -133,13 +118,10 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/chin.STL" />
+        <mesh filename="../meshes/chin.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
       </material>
     </visual>
     <!-- <collision>
@@ -147,20 +129,16 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/chin.STL" />
+        <mesh filename="../meshes/chin.STL" />
       </geometry>
     </collision> -->
   </link>
-  <joint name="tilt"
-    type="revolute">
+  <joint name="tilt" type="revolute">
     <origin
       xyz="0 0.0186 0.12"
       rpy="-1.5708 0 0" />
-    <parent
-      link="neck" />
-    <child
-      link="chin" />
+    <parent link="neck" />
+    <child link="chin" />
     <axis
       xyz="0 0 -1" />
     <limit
@@ -175,8 +153,7 @@
     <origin
         xyz="-0.011550000000000001 -0.02876 -0.01864"
         rpy="0 0 0" />
-    <mass
-        value="0.18813" />
+    <mass value="0.18813" />
     <inertia
         ixx="0.0006845556"
         ixy="-7.591147e-05"
@@ -190,13 +167,10 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/face.STL" />
+        <mesh filename="../meshes/face.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      <material name="">
+        <color rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
       </material>
     </visual>
     <!-- <collision>
@@ -204,20 +178,16 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/face.STL" />
+        <mesh filename="../meshes/face.STL" />
       </geometry>
     </collision> -->
   </link>
-  <joint name="chin_face"
-    type="fixed">
+  <joint name="chin_face" type="fixed">
     <origin
       xyz="0 0 0"
       rpy="0 0 0" />
-    <parent
-      link="chin" />
-    <child
-      link="face" />
+    <parent link="chin" />
+    <child link="face" />
     <axis
       xyz="0 0 0" />
   </joint>
@@ -227,8 +197,7 @@
     <origin
         xyz="0.01298 5e-05 -0.00014000000000000001"
         rpy="0 0 0" />
-    <mass
-        value="0.12" />
+    <mass value="0.12" />
     <inertia
         ixx="0.00014290851000000002"
         ixy="3.955e-08"
@@ -242,13 +211,10 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/d455_link.STL" />
+        <mesh filename="../meshes/d455_link.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <!-- <collision>
@@ -256,20 +222,16 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/d455_link.STL" />
+        <mesh filename="../meshes/d455_link.STL" />
       </geometry>
     </collision> -->
   </link>
-  <joint name="chin_d455"
-    type="fixed">
+  <joint name="chin_d455" type="fixed">
     <origin
       xyz="0.042 0 -0.0186"
       rpy="1.5708 0 0" />
-    <parent
-      link="chin" />
-    <child
-      link="d455_link" />
+    <parent link="chin" />
+    <child link="d455_link" />
     <axis
       xyz="0 0 0" />
   </joint>
@@ -279,8 +241,7 @@
     <origin
         xyz="-0.0002 -1e-05 0.02203"
         rpy="0 0 0" />
-    <mass
-        value="0.265" />
+    <mass value="0.265" />
     <inertia
         ixx="0.00012374566"
         ixy="-1.102e-08"
@@ -294,13 +255,10 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/mid360_link.STL" />
+        <mesh filename="../meshes/mid360_link.STL" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <!-- <collision>
@@ -308,20 +266,16 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="../meshes/mid360_link.STL" />
+        <mesh filename="../meshes/mid360_link.STL" />
       </geometry>
     </collision> -->
   </link>
-  <joint name="chin_mid360"
-    type="fixed">
+  <joint name="chin_mid360" type="fixed">
     <origin
       xyz="-0.025 -0.042 -0.0186"
       rpy="1.5708 0 0" />
-    <parent
-      link="chin" />
-    <child
-      link="mid360_link" />
+    <parent link="chin" />
+    <child link="mid360_link" />
     <axis
       xyz="0 0 0" />
   </joint>
